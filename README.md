@@ -11,6 +11,7 @@ The portfolio's endpoint remediation and health assessment repositories focus on
 ## Playbook set
 
 - [Incident lifecycle and MSP operating model](docs/operations-model.md): roles, intake, severity, handoffs, evidence, communications, and closure.
+- [ITIL 4–aligned incident management rules](docs/itil4-incident-management-rules.md): an MSP-focused operational checklist and record minimum.
 - [Identity compromise response](playbooks/identity-compromise.md): safe triage and coordinated containment for a suspected user/admin account takeover.
 - [Endpoint rollout / service degradation](playbooks/service-degradation.md): triage for a change-associated widespread endpoint or cloud service impact.
 - [Incident record template](templates/incident-record.md): time-ordered evidence, decisions, and ownership.
@@ -53,6 +54,7 @@ No tabletop, customer exercise, technical simulation, or production incident was
 
 ## References
 
+- [PeopleCert: ITIL 4 Practitioner — Incident Management](https://www.peoplecert.org/browse-certifications/it-governance-and-service-management/ITIL-1/itil4-practices-incident-management-3684): official practice information. The rules in this repository are an original high-level adaptation; consult licensed ITIL materials for the full guidance.
 - [NIST SP 800-61 Rev. 3, final (April 2025)](https://csrc.nist.gov/pubs/sp/800/61/r3/final): incident response recommendations integrated with CSF 2.0 risk management.
 - [CISA Federal Government Cybersecurity Incident and Vulnerability Response Playbooks](https://www.cisa.gov/resources-tools/resources/federal-government-cybersecurity-incident-and-vulnerability-response-playbooks): a public example of structured incident response; federal-specific instructions do not automatically apply to MSP customers.
 - [Microsoft incident response planning](https://learn.microsoft.com/en-us/security/operations/incident-response-planning): preparation and tabletop exercise guidance.
