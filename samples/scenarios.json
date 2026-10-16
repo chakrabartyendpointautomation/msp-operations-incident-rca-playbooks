@@ -1,0 +1,33 @@
+{
+  "notice": "Fictional tabletop discussion prompts only; no real customer, tenant, or incident data.",
+  "scenarios": [
+    {
+      "id": "scenario-001",
+      "title": "Unexpected privileged sign-in",
+      "context": "A fictional customer reports an unfamiliar sign-in alert for an administrator account. The alert alone does not establish account compromise.",
+      "discussion_prompts": [
+        "Who owns incident command, identity investigation, and customer communication?",
+        "Which logs and timestamps should be preserved in the approved evidence store?",
+        "What corroborating signals distinguish travel, automation, token theft, and false positive?",
+        "Which containment actions require customer authorization, and who can approve them?",
+        "How will access restoration and session revocation be verified?"
+      ],
+      "expected_artifacts": ["incident record", "customer update", "decision log", "RCA action register"],
+      "safety_constraints": ["Do not use real identities or credentials", "Do not execute containment actions in this exercise"]
+    },
+    {
+      "id": "scenario-002",
+      "title": "Device enrollment service degradation",
+      "context": "A fictional staged device deployment shows increased enrollment failures after a configuration change; impact scope and causal link are initially uncertain.",
+      "discussion_prompts": [
+        "How will the team establish affected cohorts and compare against a baseline?",
+        "What is the safe decision point for pausing the next rollout ring?",
+        "Who owns rollback approval, and what dependencies could make rollback unsafe?",
+        "Which signals verify recovery without weakening security controls?",
+        "How should the MSP communicate uncertainty, workaround, and next update time?"
+      ],
+      "expected_artifacts": ["incident record", "timeline", "customer update", "RCA action register"],
+      "safety_constraints": ["No live tenant changes", "Do not disable security controls broadly", "No production rollout is performed"]
+    }
+  ]
+}
